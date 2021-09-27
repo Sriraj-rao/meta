@@ -1,0 +1,22 @@
+p {
+    font-family: Lato;
+  }
+  
+  .blocksWrapper {
+    display: flex;
+    overflow: auto;
+    // background-color: blue;
+    padding: 20px 0;
+    margin: 10px 0 0 0;
+    min-height: 305px;
+  }
+
+  .flex
+  {
+      display: flex!important;
+  }
+
+  .card-width
+  {
+    flex: 0 0 50%;
+  }
