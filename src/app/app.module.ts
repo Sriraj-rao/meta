@@ -9,6 +9,10 @@ import { WhatWentWellComponent } from './what-went-well/what-went-well.component
 import {MatCardModule} from '@angular/material/card';
 
 import { WhatCanBeImprovedComponent } from './what-can-be-improved/what-can-be-improved.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StartDoingComponent } from './start-doing/start-doing.component';
+import { ActionItemsComponent } from './action-items/action-items.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,8 @@ import { WhatCanBeImprovedComponent } from './what-can-be-improved/what-can-be-i
     HeaderComponent,
     WhatWentWellComponent,
     WhatCanBeImprovedComponent,
+    StartDoingComponent,
+    ActionItemsComponent,
   
   ],
   imports: [
@@ -23,7 +29,9 @@ import { WhatCanBeImprovedComponent } from './what-can-be-improved/what-can-be-i
     AppRoutingModule,
     MatCardModule,
     MatToolbarModule,
-    
+    FormsModule,
+    ReactiveFormsModule,
+    FlexLayoutModule
     // matToolbarModule
   
   ],

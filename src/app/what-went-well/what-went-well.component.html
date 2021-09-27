@@ -1,5 +1,11 @@
-<mat-card class="card">
+<p class="bold">What Went Well</p>
+
+<button mat-raised-button (click)="addCard()">What Went well</button>
+<button mat-raised-button (click)="clearWwwCards()">Clear All Cards</button>
+<mat-card class="card blocksWrapper" *ngFor="let blockData of blocks; let i = index">
     <!-- <mat-card-title>{{blockData.opinions}}</mat-card-title> -->
-    <input >
+    <input [(ngModel)]="blockData.opinions">
     
+    <button (click)="save(blockData,i)">Save</button>
   </mat-card>
+

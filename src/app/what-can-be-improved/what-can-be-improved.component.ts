@@ -8,11 +8,26 @@ import { improveData } from '../models/improve.model';
 })
 export class WhatCanBeImprovedComponent implements OnInit {
 
-  @Input()
-  improveData!: improveData;
+
+  improve:improveData[] = [];
   constructor() { }
 
   ngOnInit(): void {
+  }
+  clearWciCards() {
+    this.improve.length = 0;
+  }
+
+  addWciCard()
+  {
+    this.improve.push({
+      improve:""
+     
+    });
+  }
+  save(save:improveData,index:number)
+  {
+    console.log(save,index);
   }
 
 }

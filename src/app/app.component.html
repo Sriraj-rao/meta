@@ -1,20 +1,32 @@
- <app-header >
+ <div >
+ <app-header  >
   </app-header>
   <div class="row flex">
-    <div class="col-sm-6 card-width">
-        <button mat-raised-button (click)="addCard()">What Went well</button>
-<button mat-raised-button (click)="clearWwwCards()">Clear All Cards</button>
+    <div class="col-sm-3 card-width"  fxLayout="column" fxLayout.xs="row" fxLayoutAlign="space-between">
+    
 <div class="blocksWrapper">
-    <app-what-went-well *ngFor="let block of blocks" [blockData]="block">
+    <app-what-went-well >
     </app-what-went-well>
   </div>
        
     </div>
-    <div class="col-sm-6 card-width">
-        <button mat-raised-button (click)="addWciCard()">What Can be Improved</button>
-        <button mat-raised-button (click)="clearWciCards()">Clear All Cards</button>
+    <div class="col-sm-3 card-width" fxLayout="column" fxLayout.xs="row" fxLayoutAlign="space-between">
+       
+        <div class = "blocksWrapper" >
+        <app-what-can-be-improved ></app-what-can-be-improved>
+    </div>
+    </div>
+    <div class="col-sm-3 card-width"   fxLayout="column" fxLayout.xs="row" fxLayoutAlign="space-between">
+       
         <div class = "blocksWrapper">
-        <app-what-can-be-improved *ngFor="let improved of improve" [improveData]="improved"></app-what-can-be-improved>
+        <app-start-doing ></app-start-doing>
     </div>
     </div>
+    <div class="col-sm-3 card-width"  fxLayout="column" fxLayout.xs="row"fxLayoutAlign="space-between">
+       
+        <div class = "blocksWrapper">
+        <app-action-items ></app-action-items>
+    </div>
+    </div>
+</div>
 </div>

@@ -29,16 +29,6 @@ export class AppComponent {
     this.blocks.length = 0;
   }
 
-  clearWciCards() {
-    this.improve.length = 0;
-  }
 
-  addWciCard()
-  {
-    this.improve.push({
-      improve:""
-     
-    });
-  }
 
 }

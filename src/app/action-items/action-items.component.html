@@ -1,0 +1,9 @@
+<p class="bold">Action Items</p>
+<button mat-raised-button (click)="addWciCard()">Action Items</button>
+<button mat-raised-button (click)="clearWciCards()">Clear All Cards</button>
+<mat-card class="card blocksWrapper" *ngFor="let blockData of actionItems; let i = index">
+    <!-- <mat-card-title>{{blockData.opinions}}</mat-card-title> -->
+    <input [(ngModel)]="blockData.actionItems">
+    
+    <button (click)="save(blockData,i)">Save</button>
+  </mat-card>

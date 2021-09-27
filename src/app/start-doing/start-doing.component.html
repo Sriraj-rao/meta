@@ -1,0 +1,10 @@
+<p class="bold">Start Doing</p>
+
+<button mat-raised-button (click)="addWciCard()">Start Doing</button>
+<button mat-raised-button (click)="clearWciCards()">Clear All Cards</button>
+<mat-card class="card blocksWrapper" *ngFor="let blockData of startDoing; let i = index">
+    <!-- <mat-card-title>{{blockData.opinions}}</mat-card-title> -->
+    <input [(ngModel)]="blockData.startDoing">
+    
+    <button (click)="save(blockData,i)">Save</button>
+  </mat-card>
